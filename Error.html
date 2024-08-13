@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+    <?!= include('Tyylit'); ?>
+    <?!= include('Napit'); ?>  
+  </head>  
+  <body>    
+    <? Logger.log("HTML: dialog: " + data); ?>    
+    <p><?= data ?></p>
+    <br>
+    <input type="button" class="button" id="nappi" value="OK" onclick="google.script.host.close()" autofocus/>
+  </body>
+</html>

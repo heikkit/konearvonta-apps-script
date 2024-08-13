@@ -1,0 +1,13 @@
+<script>    
+  
+document.onkeydown = function (e) {
+  e = e || window.event;
+  switch (e.which || e.keyCode) {
+        case 13 : //Your Code Here (13 is ascii code for 'ENTER')
+            google.script.host.close();
+        case 27: //Esc
+            //google.script.run.peruutaMatsi();
+            google.script.host.close();
+  }
+}  
+</script>  

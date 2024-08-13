@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <base target="_top">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+    <?!= include('Tyylit'); ?>
+    <?!= include('Napit'); ?>  
+  </head>  
+
+  <body>
+  <!--  <h1>Matsi käyntiin!</h1> -->
+
+    <table>
+          <tr>
+        <td colspan="3" id="noppa"><img src="http://dl.dropboxusercontent.com/s/8dry56tbqqb693u/pinball-flipper-smol.png" alt="Noppa" height="48" width="48" align = "middle"></td>
+      </tr>
+      <tr>
+        <td colspan="3" id="kone"><?= dialogi[0] ?></td>
+      </tr>
+      <tr>
+        <td id="starter">P1: <?= dialogi[1] ?></td>        
+        <td>P2: <?= dialogi[2] ?></td>
+      </tr>
+    </table>
+    <div class="napit">
+      <input type="button" class="button" id="nappi1" value="Pelaamaan!" onclick="google.script.host.close()" autofocus />
+      <input type="button" class="button" id="nappi2" value="Arvo uusiksi" onclick="google.script.run.arvoUusi(); google.script.host.close()" />
+      <input type="button" class="button" id="nappi3" value="Peruuta" onclick="google.script.run.peruutaMatsi(); google.script.host.close()" />
+    </div>
+  </body>
+</html>
